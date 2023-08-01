@@ -1,0 +1,72 @@
+.page-result {
+  height: 100%;
+  background: url('../../../assets/images/questionnaire-bg.png') no-repeat;
+  background-size: 100% 100%;
+  padding: 32px;
+  &-top {
+    padding: 48px 32px 32px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    background: #ffffff;
+    border-radius: 12px;
+  }
+  &-bg {
+    width: 100%;
+    margin: 0 auto;
+  }
+  &-score {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 32px 0;
+    span {
+      font-size: 40px;
+      font-weight: 500;
+      color: #0e937b;
+    }
+  }
+
+  &-content {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .other-questionnaire {
+    padding: 32px;
+    background: #ffffff;
+    border-radius: 12px;
+    &-title {
+      font-size: 32px;
+      font-weight: 500;
+      color: #333333;
+      margin-bottom: 20px;
+    }
+    &-img {
+      height: 120px;
+      margin: 0 auto 32px;
+      font-size: 24px;
+      font-weight: 500;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.thyroid {
+        background-image: url('../../../assets/images/slef-top.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      &.hyperthyroidism {
+        background-image: url('../../../assets/images/slef-main.png');
+        background-size: 100% 100%;
+      }
+      &.hypothyroidism {
+        background-image: url('../../../assets/images/slef-foot.png');
+        background-size: 100% 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

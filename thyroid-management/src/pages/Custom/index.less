@@ -1,0 +1,100 @@
+.custom {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  .custom-top {
+    padding-top: 110px;
+    text-align: center;
+    &-title {
+      font-weight: 600;
+      color: #333333;
+      line-height: 40px;
+      font-size: 40px;
+      text-align: center;
+    }
+  }
+  .custom-content {
+    margin-bottom: 32px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 64px 0 48px 0;
+      li {
+        flex: 1;
+        height: 120px;
+        border-radius: 10px;
+        border: 1px solid @primary-color;
+        list-style: none;
+        padding: 38px 90px 38px 90px;
+        font-size: 32px;
+        color: @primary-color;
+        font-weight: 500;
+        margin-left: -94px;
+      }
+      li:nth-child(2) {
+        margin-top: 64px;
+      }
+      li.active {
+        background: @primary-color;
+        color: #fff;
+      }
+    }
+    .custom-content-list {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding: 0 64px;
+      &-value {
+        width: 36%;
+        height: 64px;
+        background: #fff;
+        border-radius: 33px;
+        border: 1px solid #cccccc;
+        line-height: 64px;
+        text-align: center;
+        font-size: 24px;
+        color: #999999;
+      }
+      &-value:nth-child(odd) {
+        margin-right: 54px;
+      }
+      &-value.active {
+        background: rgba(0, 125, 116, 0.1);
+        border: 1px solid @primary-color;
+        color: @primary-color;
+      }
+      &-value:nth-child(n + 3) {
+        margin-top: 32px;
+      }
+    }
+  }
+  .thyroid-gland-select-info-bottom {
+    // position: absolute;
+    // bottom: 20%;
+    // left: 50%;
+    // margin-bottom: 94px;
+    // bottom: 96px;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    // transform: translateX(-50%);
+    width: 440px;
+    height: 88px;
+    background: @primary-color;
+
+    border-radius: 48px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 88px;
+    text-align: center;
+    &.disable {
+      color: #fff;
+      background: #94c9c5;
+    }
+  }
+}

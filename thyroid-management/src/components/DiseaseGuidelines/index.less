@@ -1,0 +1,58 @@
+.disease-guide-content {
+  padding: 32px;
+  background: #ffffff;
+  box-shadow: 0px 6px 12px 0px rgba(0, 125, 116, 0.07);
+  border-radius: 12px;
+  margin: 0 auto;
+  overflow: hidden;
+  &-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #333333;
+  }
+  .sufferConnection-content-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333333;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: #666666;
+    img {
+      width: 24px;
+      height: 24px;
+      margin-left: 8px;
+    }
+  }
+
+  .custom-content-list {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    &-value {
+      width: 45%;
+      height: 64px;
+      background: #fff;
+      border-radius: 33px;
+      border: 1px solid #cccccc;
+      line-height: 64px;
+      text-align: center;
+      font-size: 24px;
+      color: #999999;
+    }
+
+    &-value:active {
+      background: rgba(0, 125, 116, 0.1);
+      border: 1px solid @primary-color;
+      color: @primary-color;
+    }
+    &-value:nth-child(n + 3) {
+      margin-top: 32px;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.Emotion {
+  width: 100%;
+  height: 100vh;
+  background: @primary-color;
+  overflow: hidden;
+  padding: 0 32px;
+  &-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0;
+    box-sizing: border-box;
+    &-left {
+      width: 45%;
+      height: 208px;
+      background: #03a297;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 96px;
+        height: 98px;
+      }
+      span {
+        height: 28px;
+        font-size: 28px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 28px;
+        margin-top: 18px;
+      }
+    }
+    &-right {
+      width: 45%;
+      height: 212px;
+      background-image: url('../../assets/images/muse.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 96px;
+        height: 98px;
+      }
+      span {
+        height: 28px;
+        font-size: 28px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 28px;
+        margin-top: 18px;
+      }
+    }
+  }
+  &-content {
+    &-title {
+      height: 32px;
+      font-size: 32px;
+      font-weight: 500;
+      color: #ffffff;
+      line-height: 32px;
+    }
+    &-titleChildren {
+      height: 24px;
+      font-size: 24px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.74);
+      line-height: 24px;
+      margin-top: 16px;
+    }
+    &-questionnaire {
+      width: 100%;
+      height: 30px;
+      height: 140px;
+      border-radius: 12px;
+      margin-top: 32px;
+      border: 1px solid;
+      border: none;
+
+      box-shadow: 0px -4px 0px 0px #46ada6,
+        /*上边阴影  红色*/ -4px 0px 0px 0px #46ada6,
+        /*左边阴影  绿色*/ 4px 0px 0px 0px #46ada6,
+        /*右边阴影  蓝色*/ 0px 4px 0px 0px #006961;
+      // border-image: linear-gradient(
+      //     180deg,
+      //     rgba(173, 255, 249, 1),
+      //     rgba(0, 85, 79, 1)
+      //   )
+      //   1 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      dt {
+        margin-left: 32px;
+        p:nth-child(1) {
+          height: 28px;
+          font-size: 28px;
+          font-weight: 500;
+          color: #ffffff;
+          line-height: 28px;
+          margin-top: 32px;
+        }
+        p:nth-child(2) {
+          height: 24px;
+          font-size: 24px;
+          font-weight: 500;
+          color: rgba(255, 255, 255, 0.74);
+          line-height: 24px;
+          margin-top: 24px;
+          margin-bottom: 32px;
+        }
+      }
+      dd {
+        margin-right: 32px;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

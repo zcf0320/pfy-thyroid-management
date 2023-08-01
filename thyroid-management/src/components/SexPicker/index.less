@@ -1,0 +1,58 @@
+.select-sex-page {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-boy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .boy-img {
+      width: 280px;
+      height: 280px;
+      background: url(../../assets/images/male.png) no-repeat center center;
+      background-size: 100% 100%;
+      &.active {
+        width: 280px;
+        height: 280px;
+        background: url(../../assets/images/male-active.png) no-repeat center
+          center;
+        background-size: 100% 100%;
+      }
+    }
+    .boy-text {
+      font-size: 32px;
+      font-weight: 400;
+      color: #ffffff;
+      line-height: 44px;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  &-girl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 146px;
+    .girl-img {
+      width: 280px;
+      height: 280px;
+      background: url(../../assets/images/female.png) no-repeat center center;
+      background-size: 100% 100%;
+      &.active {
+        width: 280px;
+        height: 280px;
+        background: url(../../assets/images/female-active.png) no-repeat center
+          center;
+        background-size: 100% 100%;
+      }
+    }
+    .girl-text {
+      font-size: 32px;
+      font-weight: 400;
+      color: #ffffff;
+      line-height: 44px;
+      margin-top: 24px;
+    }
+  }
+}

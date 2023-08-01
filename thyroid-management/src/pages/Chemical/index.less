@@ -1,0 +1,440 @@
+.chemical {
+  width: 100%;
+  height: 100vh;
+  background: #007c73;
+  padding: 0 32px;
+  overflow: hidden;
+  overflow: auto;
+  .chemical-top {
+    width: 100%;
+    height: 112px;
+    background-image: url('../../assets/images/icon-chem.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    // margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 0;
+    &-title {
+      height: 32px;
+      font-size: 32px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 32px;
+      margin-left: 44px;
+    }
+    &-right {
+      width: 146px;
+      height: 48px;
+      border-radius: 8px;
+      border: 2px solid @primary-color;
+      backdrop-filter: blur(2px);
+      margin-right: 44px;
+      font-size: 24px;
+      font-weight: 500;
+      color: @primary-color;
+      line-height: 48px;
+    }
+  }
+  .chemical-content {
+    &-top {
+      background: #ffffff;
+      border-radius: 12px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+      &-title {
+        height: 32px;
+        font-size: 32px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 32px;
+        margin: 48px 0 32px 0;
+      }
+      .pie-img {
+        width: 252px;
+        height: 252px;
+        background-image: url('../../assets/images/pie.png');
+        background-repeat: no-repeat center center;
+        background-size: 100% 100%;
+        position: relative;
+        margin-top: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .pie-coning {
+          width: 252px;
+          height: 252px;
+          border-radius: 50%;
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            #d8fffc 100%
+          );
+        }
+        .pie-content {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          div {
+            min-width: 130px;
+            min-height: 1px;
+            transform-origin: 0 5px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            // align-items: center;
+            justify-content: flex-end;
+            span {
+              width: 12px;
+              height: 12px;
+              background: #5d7cff;
+              border-radius: 6px;
+              position: relative;
+            }
+            p {
+              width: 300px;
+              display: flex;
+              font-size: 12px;
+              // align-items: center;
+              justify-content: center;
+              position: absolute;
+              span {
+                width: 12px;
+                height: 12px;
+                background: #5d7cff;
+                border-radius: 6px;
+              }
+            }
+          }
+          div:nth-child(1) {
+            transform: rotate(-97deg);
+            p {
+              position: absolute;
+              left: -100px;
+              top: -10px;
+              text-align: center;
+              transform: rotate(96deg);
+            }
+          }
+          div:nth-child(2) {
+            transform: rotate(-67deg);
+            p {
+              position: absolute;
+              left: -70px;
+              top: 90px;
+              text-align: center;
+              transform: rotate(67deg);
+            }
+          }
+          div:nth-child(3) {
+            transform: rotate(-27deg);
+            p {
+              position: absolute;
+              left: -30px;
+              top: 30px;
+              text-align: center;
+              transform: rotate(27deg);
+            }
+          }
+          div:nth-child(4) {
+            transform: rotate(13deg);
+            p {
+              position: absolute;
+              left: -20px;
+              top: -35px;
+              text-align: center;
+              transform: rotate(-13deg);
+            }
+          }
+          div:nth-child(5) {
+            transform: rotate(43deg);
+            p {
+              position: absolute;
+              left: -20px;
+              top: -110px;
+              text-align: center;
+              transform: rotate(-43deg);
+            }
+          }
+          div:nth-child(6) {
+            transform: rotate(73deg);
+            p {
+              position: absolute;
+              left: -70px;
+              top: -150px;
+              text-align: center;
+              transform: rotate(-73deg);
+            }
+          }
+          div:nth-child(7) {
+            transform: rotate(103deg);
+            p {
+              position: absolute;
+              left: -90px;
+              top: 70px;
+              text-align: center;
+              transform: rotate(-103deg);
+            }
+          }
+          div:nth-child(8) {
+            transform: rotate(133deg);
+            p {
+              position: absolute;
+              left: -70px;
+              top: 30px;
+              text-align: center;
+              transform: rotate(-134deg);
+            }
+          }
+          div:nth-child(9) {
+            transform: rotate(163deg);
+            p {
+              position: absolute;
+              left: -70px;
+              top: 10px;
+              text-align: center;
+              transform: rotate(-163deg);
+            }
+          }
+          div:nth-child(10) {
+            transform: rotate(193deg);
+            p {
+              position: absolute;
+              left: 0px;
+              top: -40px;
+              text-align: center;
+              transform: rotate(-193deg);
+            }
+          }
+          div:nth-child(11) {
+            transform: rotate(223deg);
+            p {
+              position: absolute;
+              left: -20px;
+              top: -120px;
+              text-align: center;
+              transform: rotate(-223deg);
+            }
+          }
+          div:nth-child(12) {
+            transform: rotate(-18deg);
+            p {
+              position: absolute;
+              left: -30px;
+              top: 40px;
+              text-align: center;
+              transform: rotate(18deg);
+            }
+          }
+        }
+
+        .pie-text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 24px;
+          font-weight: 500;
+          color: #333333;
+        }
+      }
+      .chemical-btn {
+        width: 512px;
+        height: 96px;
+        background: @primary-color;
+        box-shadow: 0px 4px 8px 0px rgba(0, 77, 71, 0.23);
+        border-radius: 12px;
+        outline: none;
+        border: none;
+        font-size: 32px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 32px;
+        margin: 88px 0 48px 0;
+      }
+    }
+    &-main {
+      // height: 168px;
+      // height: 508px;
+      // height: auto;
+      background: #ffffff;
+      box-shadow: 0px 6px 20px 0px rgba(68, 96, 225, 0.2);
+      border-radius: 12px;
+      margin: 0 auto;
+      margin-top: 32px;
+      padding: 0 32px;
+      &-top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid rgba(238, 238, 238, 0.8);
+        &-title {
+          height: 90px;
+          font-size: 32px;
+          font-weight: 600;
+          color: #333333;
+          line-height: 32px;
+          display: flex;
+          align-items: center;
+          // span:nth-child(2) {
+          //   width: 74px;
+          //   height: 42px;
+          //   border: 1px solid #ff775d;
+          //   font-size: 24px;
+          //   font-weight: 400;
+          //   color: #ff775d;
+          //   text-align: center;
+          //   margin-left: 24px;
+          //   padding: 4px 6px 4px 6px;
+          // }
+          .high-side {
+            width: 74px;
+            height: 42px;
+            border: 1px solid #ff775d;
+            font-size: 24px;
+            font-weight: 400;
+            color: #ff775d;
+            text-align: center;
+            margin-left: 24px;
+            padding: 4px 6px 4px 6px;
+          }
+          .high-flat {
+            width: 74px;
+            height: 42px;
+            border: 1px solid @primary-color;
+            font-size: 24px;
+            font-weight: 400;
+            color: @primary-color;
+            text-align: center;
+            margin-left: 24px;
+            padding: 4px 6px 4px 6px;
+          }
+        }
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+      &-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 24px 0;
+        padding-bottom: 24px;
+        &-title {
+          height: 24px;
+          font-size: 24px;
+          font-weight: 400;
+          color: #333333;
+          line-height: 24px;
+        }
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+      .chemical-content-main-content-text {
+        width: 100%;
+        margin: 32px 0;
+        padding-bottom: 32px;
+        &-value {
+          display: flex;
+          // align-items: center;
+          margin-bottom: 8px;
+          span:nth-child(1) {
+            width: 150px;
+            height: 36px;
+            font-size: 24px;
+            font-weight: 400;
+            color: #999999;
+            line-height: 36px;
+          }
+          span:nth-child(2) {
+            flex: 1;
+            font-size: 24px;
+            font-weight: 400;
+            color: #999999;
+            line-height: 36px;
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+  .chemical-normal {
+    // width: 95%;
+    // height: 882px;
+    background: #ffffff;
+    border-radius: 12px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 32px;
+    &-title {
+      height: 160px;
+      font-size: 48px;
+      font-weight: 600;
+      color: @primary-color;
+      line-height: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 48px;
+    }
+    // &-img {
+    // width: 100%;
+    // height: 354px;
+    // background-image: url('../../assets/images/average.png');
+    // background-size: 100% 100%;
+    // background-repeat: no-repeat;
+    // margin-top: 36px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    // }
+
+    &-text {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 48px 0 80px 0;
+    }
+    &-btn {
+      width: 512px;
+      height: 96px;
+      background: @primary-color;
+      box-shadow: 0px 4px 8px 0px rgba(0, 77, 71, 0.23);
+      border-radius: 12px;
+      margin: 0 auto;
+      font-size: 32px;
+      font-weight: 500;
+      color: #ffffff;
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 48px;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.sleep-login-info {
+  height: 100%;
+  padding: 88px 32px;
+  background: #fff;
+  &-title {
+    .title-top {
+      font-size: 40px;
+      font-weight: 600;
+      color: #333333;
+      line-height: 40px;
+      text-align: center;
+    }
+    .title-bottom {
+      font-size: 24px;
+      font-weight: 400;
+      color: #999999;
+      margin-top: 18px;
+      text-align: center;
+      margin-bottom: 82px;
+      margin-top: 24px;
+    }
+  }
+  &-input {
+    .input-phone,
+    .input-code {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-size: 32px;
+      border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+      // box-shadow: inset 0px -1px 0px 0px rgba(204, 204, 204, 0.5);
+      .am-list-item.am-input-item {
+        background-color: transparent;
+        padding-left: 0;
+      }
+      .am-list-line::after {
+        height: 0 !important;
+        // box-shadow: inset 0px -1px 0px 0px rgba(204, 204, 204, 0.5);
+      }
+      .am-list-item.am-input-item {
+        input {
+          font-weight: 400;
+          font-size: 32px;
+          color: #333333;
+          &::placeholder {
+            color: #999;
+            // opacity: 0.4;
+          }
+        }
+      }
+    }
+    .input-code {
+      .send-btn {
+        font-size: 24px;
+        color: @primary-color;
+        text-align: center;
+        font-weight: 400;
+        line-height: 48px;
+        margin-right: 32px;
+        width: 172px;
+        height: 48px;
+        border-radius: 48px;
+        border: 1px solid @primary-color;
+      }
+    }
+    .input-mobile {
+      flex: 1;
+    }
+  }
+  .prot {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #cccccc;
+    margin-top: 32px;
+
+    .select-content {
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      margin-top: -5px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+      margin-right: 7px;
+    }
+    .prot-text {
+      margin-left: 16px;
+    }
+    .text {
+      text-decoration: underline;
+      color: @primary-color;
+    }
+  }
+  .sleep-login-next {
+    // width: 686px;
+    height: 88px;
+    background: @primary-color;
+    border-radius: 48px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #4959bf;
+    line-height: 88px;
+    text-align: center;
+    margin: 88px auto 24px;
+    color: #fff;
+    &.disable {
+      // color: #cccccc;
+      background: #93c8c4;
+    }
+  }
+  .sleep-login-tip {
+    font-size: 24px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+.mb-32 {
+  margin-bottom: 32px;
+}

@@ -1,0 +1,109 @@
+.page-answer {
+  height: 100%;
+  background: url('../../../assets/images/questionnaire-bg.png') no-repeat;
+  background-size: 100% 100%;
+  padding: 60px 44px;
+  &-title {
+    width: 452px;
+    margin: 0 auto;
+  }
+
+  &-content {
+    width: 100%;
+    background: url('../../../assets/images/questionnaire-answer-bg.png');
+    background-size: 100% 100%;
+    padding: 196px 44px 50px;
+    .question-item {
+      .question {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-index {
+          font-size: 32px;
+          font-weight: bold;
+          color: #333333;
+        }
+        &-step {
+          font-size: 28px;
+          font-weight: 500;
+          color: #007d74;
+        }
+        &-title {
+          font-size: 32px;
+          font-weight: bold;
+          color: #333333;
+        }
+      }
+      .answer-list {
+        margin-top: 48px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .answer-item {
+          width: 100%;
+          height: 124px;
+          border-radius: 12px;
+          border: 2px solid #cccccc;
+          align-items: center;
+          padding: 0 32px;
+          margin-bottom: 32px;
+          justify-content: center;
+          .answer-text {
+            text-align: center;
+            font-size: 28px;
+            flex: 1;
+          }
+          &.active {
+            background: rgba(0, 125, 116, 0.1);
+            border: 1px solid #007d74;
+          }
+        }
+      }
+    }
+  }
+  .action-item {
+    width: 100%;
+    justify-content: space-around;
+    margin: 64px 0 96px;
+    .action-pre {
+      width: 300px;
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 48px;
+      font-size: 40px;
+      color: @primary-color;
+      background: #ffffff;
+      box-shadow: 0px 4px 8px 0px rgba(0, 77, 71, 0.23);
+    }
+    .action-pre-l {
+      width: 440px;
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: @primary-color;
+      border-radius: 48px;
+      font-size: 32px;
+      background: #ffffff;
+      box-shadow: 0px 4px 8px 0px rgba(0, 77, 71, 0.23);
+    }
+    .action-submit {
+      width: 300px;
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: @primary-color;
+      border-radius: 48px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #ffffff;
+
+      &.disable {
+        background: rgba(204, 204, 204, 0.62);
+      }
+    }
+  }
+}

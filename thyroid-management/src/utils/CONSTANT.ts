@@ -1,0 +1,9 @@
+export const TOKEN = 'prod-token'; // 生产环境token
+export const DEV_TOKEN = 'dev-token'; // 开发环境token
+export const TEST_TOKEN = 'test-token'; // 测试环境token
+export const USER_INFO = 'user-info'; //用户信息
+export const CHANNEL_CODE = 'channelCode'; //渠道
+export const THYROID = 'thyroidManage'; //甲状腺问卷code
+export const HYPOTHYROIDISM = 'hypothyroidism'; //甲减问卷code
+export const HYPERTHYROIDISM = 'hyperthyroidism'; //甲亢问卷code
+export const SERVICERECORDID = 'serviceRecordId'; //小程序服务项id
